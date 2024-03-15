@@ -108,3 +108,7 @@ main{
     color: #555555;
     margin-top: 15px;
 }
+
+@media screen and (min-width) {
+    
+}
