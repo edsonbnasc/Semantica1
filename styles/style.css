@@ -56,10 +56,10 @@ header{
     width: 400px;
     height: 250px;
 }
-main{
+/* main{
     border: 2px solid yellow;
     
-}
+} */
 
 .main-card{
     display: flex;
@@ -109,6 +109,26 @@ main{
     margin-top: 15px;
 }
 
-@media screen and (min-width) {
-    
+/* regra - tipo de midia - operador - media feature */
+/* min-width faz o oposto ele ira fazer quando chegar acima do valor */
+@media screen and (max-width:414px) {
+    header{
+        height: 100vh;
+        
+    }
+    .header-style{
+        flex-direction: column;
+        gap: 80px;
+    }
+    .header-style__info>p{
+        line-height: 30px;
+    }
+    .main-card{
+        width: 80%;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .card-style{
+        width: 100%;
+    }
 }
